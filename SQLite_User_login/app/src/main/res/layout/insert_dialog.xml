@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <!-- 插入对话框线性布局对于姓名字段 -->
+
+    <LinearLayout
+        android:id="@+id/insert_linearLayout_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <!-- 姓名提示 -->
+
+        <TextView
+            android:id="@+id/insert_text_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/insert_text_name"
+            android:textSize="20dp" />
+
+        <!-- 姓名输入 -->
+
+        <EditText
+            android:id="@+id/insert_edit_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!-- 插入对话框线性布局对于年龄字段 -->
+
+    <LinearLayout
+        android:id="@+id/insert_linearLayout_age"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/insert_linearLayout_name" >
+        <!-- 年龄提示 -->
+        <TextView
+            android:id="@+id/insert_text_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/insert_text_age"
+            android:textSize="20dp" />
+        <!-- 年龄输入 -->
+        <EditText
+            android:id="@+id/insert_edit_age"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/insert_linearLayout_age"
+        android:layout_centerHorizontal="true">
+        <!-- 性别提示 -->
+        <TextView
+            android:id="@+id/insert_text_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/insert_text_sex"
+            android:textSize="20dp" />
+        <!-- 性别输入 -->
+        <EditText
+            android:id="@+id/insert_edit_sex"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+    <!-- 确认插入按钮 -->
+    <Button
+        android:id="@+id/insert_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/insert_confirm"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <!-- 取消插入按钮 -->
+    <Button
+        android:id="@+id/insert_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/insert_cancel"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

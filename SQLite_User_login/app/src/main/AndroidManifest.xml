@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.foolishfan.user_v10">
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_delong"
+        android:label="Delong"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".User"
+            android:label="个人中心"/>
+        <activity android:name=".Register"
+            android:label="用户注册"/>
+        <activity android:name=".Resetpwd"
+            android:label="密码修改"/>
+            <activity android:name=".MainActivity"
+                android:label="个人中心"/>
+            <!-- 插入对话框 -->
+            <activity
+                android:name="com.example.foolishfan.user_v10.dialog.InsertDialog"
+                android:theme="@android:style/Theme.Dialog" >
+            </activity>
+            <!-- 删除对话框 -->
+            <activity
+                android:name="com.example.foolishfan.user_v10.dialog.DeleteDialog"
+                android:theme="@android:style/Theme.Dialog" >
+            </activity>
+            <!-- 更新对话框 -->
+            <activity
+                android:name="com.example.foolishfan.user_v10.dialog.UpdateDialog"
+                android:theme="@android:style/Theme.Dialog" >
+            </activity>
+    </application>
+</manifest>
